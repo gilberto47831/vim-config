@@ -1,0 +1,48 @@
+let g:skip_defaults_vim = 1
+"Set compatibility to vim only
+set nocompatible
+
+"Helps force plugins load corrects when it is turned back on below
+"filetype off
+filetype plugin on
+filetype plugin indent on
+set belloff=all
+
+"search into subfolders
+set path+=**
+"dispaly all matching files when we tab complete
+set wildmenu
+
+set ai
+set wrap
+syntax enable
+set number
+set backspace=indent,eol,start
+
+"how much is \t
+set tabstop=4
+"how many spaces is an indent level
+set shiftwidth=4
+"tab keys spaces
+set softtabstop=4
+"expand to spaces
+set expandtab
+"use mult of shiftwidt when indenting with < and >
+set shiftround
+
+"show matching pair
+set showmatch
+
+set autoindent
+set smartindent
+
+"set block cursor
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[1 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[0 q"
+
+"store info from no more than 100 files at a time, 9999 lines of text, 100kb of data. Useful for copying large amounts of data between files.
+set viminfo='100,<9999,s100
+
+"remaps
