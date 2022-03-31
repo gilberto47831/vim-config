@@ -34,7 +34,6 @@ set shiftround
 set showmatch
 
 set autoindent
-set smartindent
 
 "set block cursor
 let &t_ti.="\e[1 q"
